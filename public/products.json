@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Perfect for beginners to create professional resumes quickly.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "info",
+    "features": [
+      "10+ templates",
+      "Basic ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Professional Resume Kit",
+    "description": "Advanced resume builder with premium templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "warning",
+    "features": [
+      "50+ templates",
+      "ATS optimization",
+      "Export to PDF & Word",
+      "Cover letter builder"
+    ],
+    "icon": "../src/assets/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Pro Package",
+    "description": "Complete job seeker toolkit.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "success",
+    "features": [
+      "100+ templates",
+      "LinkedIn optimizer",
+      "Resume analytics",
+      "Export multiple formats"
+    ],
+    "icon": "../src/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Create developer & designer portfolios.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "info",
+    "features": [
+      "20+ portfolio layouts",
+      "Custom domain",
+      "SEO optimization"
+    ],
+    "icon": "../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Preparation Pack",
+    "description": "Prepare for technical & HR interviews.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "warning",
+    "features": [
+      "Mock interview questions",
+      "Interview tips",
+      "Video lessons"
+    ],
+    "icon": "../src/assets/products/shopping-cart.png"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Pro",
+    "description": "Track job applications and progress.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "warning",
+    "features": [
+      "Application tracking",
+      "Reminder alerts",
+      "Status dashboard"
+    ],
+    "icon": "../src/assets/products/operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Ultimate Career Bundle",
+    "description": "All-in-one career growth solution.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "success",
+    "features": [
+      "Resume builder",
+      "Portfolio builder",
+      "Interview prep",
+      "Job tracker"
+    ],
+    "icon": "../src/assets/products/social-media.png"
+  },
+  {
+    "id": 8,
+    "name": "Student Resume Pack",
+    "description": "Designed for fresh graduates and students.",
+    "price": 5,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "info",
+    "features": [
+      "Student templates",
+      "Internship resume",
+      "Simple export"
+    ],
+    "icon": "../src/assets/products/writing_2327400 1.png"
+  }
+]
