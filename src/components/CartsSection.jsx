@@ -1,8 +1,6 @@
 import React from 'react';
-import ProductsCartsTitle from './ui/ProductsCartsTitle';
-import User from  "../assets/user.png";
-import Package from "../assets/package.png";
-import Rocket  from "../assets/rocket.png";
+import { toast } from 'react-toastify';
+
 
 const CartsSection = ({ carts, setCarts }) => {
     // console.log(carts)
@@ -16,6 +14,7 @@ const CartsSection = ({ carts, setCarts }) => {
         const updateCarts = carts.filter((cart)=> cart.id !== cartParam.id);
         // console.log(updateCarts)
         setCarts(updateCarts);
+        toast.error(`${cartParam.name} removed from cart!`);
     }
     return (
         <>

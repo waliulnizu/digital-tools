@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa6";
+import { toast } from 'react-toastify';
 
 const ProductCard = ({ product, carts, setCarts }) => {
 
@@ -8,8 +9,8 @@ const ProductCard = ({ product, carts, setCarts }) => {
     const handleSubscribe = () => {
         setSubscribedProducts(!subscribedProducts);
         setCarts([...carts, product]);
-        
-    }
+        toast.success(`${product.name} added to cart!`);
+    };
     return (
         <>
             <div className="shadow-lg rounded-xl border-[#f2f2f2FF] px-8 py-4 " key={product.id} >
