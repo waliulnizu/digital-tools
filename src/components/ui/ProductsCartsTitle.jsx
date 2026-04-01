@@ -9,9 +9,9 @@ const fetchProducts = async () => {
 };
 
 const productsPromise = fetchProducts();
-const ProductsCartsTitle = ({ carts, setCarts }) => {
+const ProductsCartsTitle = ({ carts = [], setCarts }) => {
 
-  const [activeTab, setActiveTab] = useState("products");
+  const [activeTab, setActiveTab] = useState("Products");
   // console.log(activeTab)
 
   

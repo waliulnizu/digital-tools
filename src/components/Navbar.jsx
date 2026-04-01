@@ -21,11 +21,10 @@ const Navbar = ({carts}) => {
                 </div>
                 {/* login */}
                 <div className='flex items-center text-md gap-4'>
-                    
-                    <div className='text-3xl text-blue-700 flex items-center gap-0.5'><CiShoppingCart /> {carts.length > 0 &&(
-                        <span className='text-xl'>{carts.length}</span> )} </div>
-
-                    
+                    <div className='relative text-3xl text-blue-700'>
+                        <CiShoppingCart />
+                        <span className='absolute -top-2 -right-3 text-xs bg-red-500 text-white rounded-full px-2 py-0.5'>{carts?.length || 0}</span>
+                    </div>
                     <button>Login</button>
                     <button className='btn btn-info rounded-2xl'>Get Started</button>
                 </div>
