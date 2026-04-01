@@ -41,7 +41,7 @@ const ProductsCartsTitle = () => {
           </div>
 
            { activeTab === "Products" && <ProductsSection  productsPromise={productsPromise} carts={carts} setCarts={setCarts}/> }
-            { activeTab === "Carts" && <CartsSection  carts={carts}/> }
+            { activeTab === "Carts" && <CartsSection  carts={carts} setCarts={setCarts}/> }
 
         </div>
         </div>
