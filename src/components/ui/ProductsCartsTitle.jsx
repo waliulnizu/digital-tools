@@ -36,7 +36,7 @@ const ProductsCartsTitle = () => {
           {/* name of each tab group should be unique */}
           <div className="tabs tabs-box justify-center bg-transparent mt-6">
             <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products " onClick={()=>setActiveTab("Products")} defaultChecked />
-            <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Carts" onClick={()=>setActiveTab("Carts")} />
+            <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Carts (${carts.length})`} onClick={()=>setActiveTab("Carts")} />
             
           </div>
 

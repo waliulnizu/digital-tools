@@ -10,6 +10,13 @@ const CartsSection = ({ carts, setCarts }) => {
     const handlePayment = () => {
         setCarts([]);
     }
+
+    const handeRemove =(cartParam) => {
+        // console.log(cartParam)
+        const updateCarts = carts.filter((cart)=> cart.id !== cartParam.id);
+        // console.log(updateCarts)
+        setCarts(updateCarts);
+    }
     return (
         <>
         <div className="p-12">
@@ -32,7 +39,7 @@ const CartsSection = ({ carts, setCarts }) => {
                     <h4 className='text-lg'>${cart.price.toFixed(2)}/{cart.period}</h4>
                 </div>
                 </div>
-                <button className='bg-red-500 text-white p-2 rounded-lg hover:bg-red-600'>
+                <button onClick={()=> handeRemove(cart)} className='bg-red-500 text-white p-2 rounded-lg hover:bg-red-600'>
                     Remove
                 </button>
             </div>
