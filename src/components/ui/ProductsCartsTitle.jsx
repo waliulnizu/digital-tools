@@ -9,12 +9,12 @@ const fetchProducts = async () => {
 };
 
 const productsPromise = fetchProducts();
-const ProductsCartsTitle = () => {
+const ProductsCartsTitle = ({ carts, setCarts }) => {
 
   const [activeTab, setActiveTab] = useState("products");
   // console.log(activeTab)
 
-  const [carts, setCarts] = useState([]);
+  
   // console.log(carts)
     return (
         <div className="w-9/12 mx-auto py-20">

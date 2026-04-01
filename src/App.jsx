@@ -7,21 +7,24 @@ import Navbar from "./components/Navbar"
 import PricingSection from "./components/PricingSection";
 import StatsBar from "./components/StatsBar"
 import ProductsCartsTitle from "./components/ui/ProductsCartsTitle";
+import { useState } from "react";
 
 
 
 
 function App() {
 
+  const [carts, setCarts] = useState([]);
+
   
   
 
   return (
     <>
-      <Navbar />
-      <HeroSection />
+      <Navbar carts={carts} setCarts={setCarts}/>
+      <HeroSection  />
       <StatsBar />
-      <ProductsCartsTitle />
+      <ProductsCartsTitle  carts={carts} setCarts={setCarts}/>
       
     
       <HowItWorks />
